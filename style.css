@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(wall.jpg);
+  background-size: cover;
+}
+
+h1 {
+  padding: 20px 60px;
+  font-family: "Pacifico", cursive;
+  color: snow;
+  font-size: 100px;
+  opacity: 0.5;
+  transition: text-shadow 0.3s, opacity 0.5s;
+}
+
+.switch {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+.switch:checked ~ h1 {
+  opacity: 0.9;
+  text-shadow: 0 0 10px violet, 0 0 20px violet, 0 0 30px violet,
+    0 0 60px violet, 0 0 100px violet;
+}
